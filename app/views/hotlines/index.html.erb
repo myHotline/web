@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Hotlines</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Number</th>
+      <th>Link</th>
+      <th>Donate</th>
+      <th>Category</th>
+      <th>Hours</th>
+      <th>Description</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @hotlines.each do |hotline| %>
+      <tr>
+        <td><%= hotline.name %></td>
+        <td><%= hotline.number %></td>
+        <td><%= hotline.link %></td>
+        <td><%= hotline.donate %></td>
+        <td><%= hotline.category %></td>
+        <td><%= hotline.hours %></td>
+        <td><%= hotline.description %></td>
+        <td><%= link_to 'Show', hotline %></td>
+        <td><%= link_to 'Edit', edit_hotline_path(hotline) %></td>
+        <td><%= link_to 'Destroy', hotline, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Hotline', new_hotline_path %>

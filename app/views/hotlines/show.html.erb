@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @hotline.name %>
+</p>
+
+<p>
+  <strong>Number:</strong>
+  <%= @hotline.number %>
+</p>
+
+<p>
+  <strong>Link:</strong>
+  <%= @hotline.link %>
+</p>
+
+<p>
+  <strong>Donate:</strong>
+  <%= @hotline.donate %>
+</p>
+
+<p>
+  <strong>Category:</strong>
+  <%= @hotline.category %>
+</p>
+
+<p>
+  <strong>Hours:</strong>
+  <%= @hotline.hours %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @hotline.description %>
+</p>
+
+<%= link_to 'Edit', edit_hotline_path(@hotline) %> |
+<%= link_to 'Back', hotlines_path %>

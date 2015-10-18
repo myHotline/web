@@ -1,0 +1,7 @@
+Sun, 18 Oct 2015 01:58:09 -0400
+README.rdoc	Sun, 18 Oct 2015 01:58:00 -0400
+app/controllers/application_controller.rb	Sun, 18 Oct 2015 00:54:28 -0400
+app/controllers/locations_controller.rb	Sun, 18 Oct 2015 01:18:10 -0400
+app/helpers/application_helper.rb	Sun, 18 Oct 2015 00:54:28 -0400
+app/helpers/locations_helper.rb	Sun, 18 Oct 2015 01:18:10 -0400
+app/models/location.rb	Sun, 18 Oct 2015 01:18:10 -0400
