@@ -14,5 +14,42 @@
  *= require_self
  */
 
+$primary: #97F9F9
+$primaryDark: #A4DEF9
+$accent: #C1E0F7
+$secondary: #CFBAE1
+$secondaryDark: #C59FC9
+
 // Custom bootstrap variables must be set or import before bootstrap itself.
+$enable-flex: true
 @import "bootstrap"
+
+body
+  background-color: $primaryDark
+  color: #fff
+  font-family: verdana, arial, helvetica, sans-serif
+  font-size: 13px
+  line-height: 18px
+
+.vertically-align
+  display: flex
+  align-items: center
+  justify-content: center
+
+.full-height
+  min-height: 100vh
+
+.form-transparent
+  color: white
+  background: $accent
+  border-color: $accent
+  outline-color: $secondaryDark
+
+.form-transparent::-webkit-input-placeholder
+  color: #eee
+.form-transparent:-moz-placeholder
+  color: #eee
+.form-transparent::-moz-placeholder
+  color: #eee
+.form-transparent:-ms-input-placeholder
+  color: #eee
