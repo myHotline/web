@@ -11,10 +11,32 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151018051747) do
+ActiveRecord::Schema.define(version: 20151018162658) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "areas", force: :cascade do |t|
+    t.string   "name"
+    t.integer  "hotline_id",   default: [],              array: true
+    t.string   "hotline_type", default: [],              array: true
+    t.datetime "created_at",                null: false
+    t.datetime "updated_at",                null: false
+  end
+
+  add_index "areas", ["hotline_type", "hotline_id"], name: "index_areas_on_hotline_type_and_hotline_id", using: :btree
+
+  create_table "hotlines", force: :cascade do |t|
+    t.string   "name"
+    t.string   "number"
+    t.string   "link"
+    t.string   "donate"
+    t.string   "category"
+    t.string   "hours"
+    t.string   "description"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
 
   create_table "locations", force: :cascade do |t|
     t.string   "name"
