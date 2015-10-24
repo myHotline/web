@@ -1,5 +1,7 @@
 == README
 
+A easy way to lookup crisis hotlines in your area.
+
 We'll update this later but the gist of database setup is to follow http://www.gotealeaf.com/blog/how-to-install-postgresql-on-a-mac
 
 
